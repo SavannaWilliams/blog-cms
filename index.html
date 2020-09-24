@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Blog Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Hello World</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="post-submission.html">Submit Post</a>
-        </nav>
+        <div class="header-content">
+            <h1>PHP Blog CMS</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="post-submission.html">New Post</a>
+            </nav>
+        </div>
     </header>
 
     <main>
         <h2>Published Posts</h2>
-        <ol>
-            <li><a href="post.html">Post 1</a></li>
-        </ol>
+        <ul class="post-list">
+            <li><a href="post.html">Blog Post 1</a></li>
+        </ul>
     </main>
 
     <footer>
