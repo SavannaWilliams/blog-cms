@@ -13,8 +13,8 @@
         <div class="header-content">
             <h1>PHP Blog CMS</h1>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="post-submission.html">New Post</a>
+                <a href="index.php">Home</a>
+                <a href="post-submission.php">New Post</a>
             </nav>
         </div>
     </header>
@@ -22,7 +22,7 @@
     <main>
         <h2>Published Posts</h2>
         <ul class="post-list">
-            <li><a href="post.html">Blog Post 1</a></li>
+            <li><a href="post.php">Blog Post 1</a></li>
         </ul>
     </main>
 

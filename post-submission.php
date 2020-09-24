@@ -13,8 +13,8 @@
         <div class="header-content">
             <h1>PHP Blog CMS</h1>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="post-submission.html">New Post</a>
+                <a href="index.php">Home</a>
+                <a href="post-submission.php">New Post</a>
             </nav>
         </div>
     </header>
