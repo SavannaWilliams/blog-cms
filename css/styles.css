@@ -70,3 +70,35 @@ footer {
 footer p {
     text-align: center;
 }
+
+/* Blog Post Page Styling */
+
+.post-header {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.post-publish-date {
+    text-align: center;
+    font-style: italic;
+}
+
+.post-publish-date p {
+    margin-bottom: .5rem;
+}
+
+.post-author {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 60px;
+}
+
+.post-author p {
+    margin-top: .5rem;
+}
+
+.post-content {
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.4rem;
+}
