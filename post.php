@@ -1,8 +1,18 @@
-<?php
-    include 'header.php';
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post- PHP Blog CMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
-
+    <?php
+        include 'header.php';
+    ?>
     <main>
 
     <?php
@@ -10,7 +20,8 @@
             // TODO in Module 4
             // get this data from a database instead of hardcoding it
             $postDetails = array('title' => 'Blog Post 1',
-                                'content' => 'My first blog post.',
+                                'content' => 'My first blog post. This text is being pulled from the array. 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus quam elementum leo hendrerit, a vulputate ipsum volutpat. Curabitur et venenatis orci. Ut non justo.',
                                 'date' => '01/01/2020',
                                 'author' => 'Savanna Williams');
                                 return $postDetails;
@@ -32,9 +43,9 @@
         </div>
     </main>
 
-    <footer>
-        <p>	&#169; Savanna Williams 2020</p>
-    </footer>
+    <?php
+        include 'footer.php';
+    ?>
 
 </body>
 </html>

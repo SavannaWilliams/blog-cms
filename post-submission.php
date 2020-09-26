@@ -1,9 +1,21 @@
-<?php
-    include 'header.php';
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Post- PHP Blog CMS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <?php
+        include 'header.php';
+    ?>
 
     <main>
-        <h2 class="post-submission-header">Create Your Post</h2>
+        <h2 class="post-submission-header">Create a New Post</h2>
         <form action="#" class="post-submission-form">
             <input type="text" placeholder="Title" id="title" name="title">
             <div class="dual-form-fields">
@@ -15,9 +27,9 @@
         </form>
     </main>
 
-    <footer>
-        <p>	&#169; Savanna Williams 2020</p>
-    </footer>
+    <?php
+        include 'footer.php';
+    ?>
 
 </body>
 </html>

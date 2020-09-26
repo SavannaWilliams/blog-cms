@@ -46,7 +46,11 @@ main {
     list-style-type: none;
     padding: 0 0 10px 0;
     margin-left: 40px;
+}
+
+.post-list li {
     border-bottom: 1px dashed rgba(148, 148, 148, 0.5);
+    margin-bottom: 10px;
 }
 
 .post-list li a {
