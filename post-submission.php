@@ -16,13 +16,13 @@
 
     <main>
         <h2 class="post-submission-header">Create a New Post</h2>
-        <form action="#" class="post-submission-form">
+        <form action="submit-post.php" method="POST" class="post-submission-form">
             <input type="text" placeholder="Title" id="title" name="title">
             <div class="dual-form-fields">
                 <input type="text" placeholder="Author" id="author" name="author">
-                <input type="text" placeholder="Date" id="date" name="date">
+                <input type="date" placeholder="Date" id="date" name="date">
             </div>
-            <textarea placeholder="Type your post content here." id="post-content" name="post-content"></textarea>
+            <textarea placeholder="Type your post content here." id="post-content" name="content"></textarea>
             <input type="submit" class="button" value="Submit">
         </form>
     </main>
