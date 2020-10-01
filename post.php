@@ -17,14 +17,17 @@
 
     <?php
         function getPostDetailsFromDatabase() {
-            // TODO in Module 4
-            // get this data from a database instead of hardcoding it
-            $postDetails = array('title' => 'Blog Post 1',
-                                'content' => 'My first blog post. This text is being pulled from the array. 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus quam elementum leo hendrerit, a vulputate ipsum volutpat. Curabitur et venenatis orci. Ut non justo.',
-                                'date' => '01/01/2020',
-                                'author' => 'Savanna Williams');
-                                return $postDetails;
+            // Get the post title
+            $postTitle = rawurldecode($_GET["title"]);
+
+            // Get the post that matches the postTitle
+            include_once 'db_connect.php';
+            $sql = "SELECT * FROM posts WHERE title = '" . $postTitle . "'";
+            $result = mysqli_query($conn, $sql);
+
+            // Get the first row from the result as an associative array
+            $postDetails = mysqli_fetch_assoc($result);
+            return $postDetails;
         }
 
         // Post details contains all the data to generate the blog from
