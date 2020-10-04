@@ -29,7 +29,6 @@
             $postDetails = mysqli_fetch_assoc($result);
             return $postDetails;
         }
-
         // Post details contains all the data to generate the blog from
         $postDetails = getPostDetailsFromDatabase();
     ?>
