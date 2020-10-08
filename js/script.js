@@ -11,3 +11,10 @@ $(document).ready(function() {
         alert("Hi there!");
     })
 })
+
+// Call list library
+var options = {
+    valueNames: [ 'title' ]
+};
+
+new List('sortable-blog-list', options);

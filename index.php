@@ -27,15 +27,22 @@
         ?>
 
         <h2>Published Posts</h2>
-        <ul class="post-list">
-            <?php
-                $postTitles = getPostTitlesFromDatabase();
 
-                foreach($postTitles as $postTitle) {
-                    echo "<li><a href='post.php?title=" . $postTitle . "'>" . $postTitle . "</a></li>";
-                }
-            ?>
-        </ul>
+        <div id="sortable-blog-list">
+            <input class="search" placeholder="Search" />
+            <button class="sort" data-sort="title">Sort</button>
+            <ul class="list post-list">
+                <?php
+                    $postTitles = getPostTitlesFromDatabase();
+                    foreach($postTitles as $postTitle) {
+                        echo "<li><a href='post.php?title=" . $postTitle 
+
+                            . "' class='title'>" . $postTitle . "</a></li>";
+                    }
+                ?>
+            </ul>
+        </div>
+
         <!-- Button needs onclick="showAlert()" for JavaScript code. Not required for JQuery. -->
         <button id="alert-button">Click me!</button>
     </main>
