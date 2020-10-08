@@ -1,4 +1,4 @@
-// alert("Hello World");
+alert("Hello World");
 
 var firstName = "Jane";                     // String type variable
 var lastName = "Doe";                       // String type variable

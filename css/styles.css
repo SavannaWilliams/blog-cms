@@ -63,6 +63,19 @@ main {
     color: #516eff;
 }
 
+#alert-button {
+    color: #fff;
+    background-color: #22348C;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#alert-button:hover {
+    color: #22348C;
+    background-color: #fff;
+    border: 1px solid #22348C;
+}
+
 
 footer {
     background-color: #22348C;
