@@ -49,7 +49,10 @@
 
     <?php
         include 'footer.php';
+        // The scripts have to be placed before the closing body tag or else the List.js features won't run.
+        include 'scripts.php';
     ?>
+
 
 </body>
 </html>

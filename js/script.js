@@ -18,3 +18,4 @@ var options = {
 };
 
 new List('sortable-blog-list', options);
+
