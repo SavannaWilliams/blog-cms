@@ -46,7 +46,6 @@
         <!-- Button needs onclick="showAlert()" for JavaScript code. Not required for JQuery. -->
         <button id="alert-button">Click me!</button>
     </main>
-
     <?php
         include 'footer.php';
         include 'scripts.php';
