@@ -19,3 +19,26 @@ var options = {
 
 new List('sortable-blog-list', options);
 
+// Ace editor initialization script
+var editor = ace.edit("editor");
+editor.session.setMode("ace/mode/html");
+
+
+// Submit button for post-submission.php
+
+$("#submit").click(function() {
+    var title = $("#title").val();
+    var author = $("#author").val();
+    var date = $("#date").val();
+    var content = editor.getValue();
+
+    $.post( "submit-post.php", { 
+        title: title, 
+        content: content, 
+        author: author, 
+        date: date 
+    }).done(function() {
+        window.location = "/index.php";
+    });
+
+});

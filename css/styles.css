@@ -76,6 +76,10 @@ main {
     border: 1px solid #22348C;
 }
 
+#editor { 
+    height: 300px;
+    width: 100%;
+}
 
 footer {
     background-color: #22348C;
@@ -120,11 +124,6 @@ footer p {
     margin-top: .5rem;
 }
 
-.post-content {
-    width: 70%;
-    margin: 0 auto;
-    line-height: 1.4rem;
-}
 
 /* ================================= 
   Post Submission Page Styles
@@ -161,18 +160,6 @@ input[type=text] {
     justify-content: space-between;
     text-align: center;
     align-items: center;
-}
-
-#post-content {
-    display: inline-block;
-    height: 250px;
-    width: 100%;
-    border-radius: 5px;
-    border: none;
-    background-color: #eff0f1;
-    margin: 0 0 20px 0;
-    box-sizing: border-box;
-    padding: 15px;
 }
 
 .button {

@@ -17,8 +17,9 @@
                 <input type="text" placeholder="Author" id="author" name="author">
                 <input type="date" placeholder="Date" id="date" name="date">
             </div>
-            <textarea placeholder="Type your post content here." id="post-content" name="content"></textarea>
-            <input type="submit" class="button" value="Submit">
+            <div id="editor"></div>
+            <input type="submit" class="button" id= "submit" value="Submit">
+
         </form>
     </main>
 
