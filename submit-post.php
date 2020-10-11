@@ -12,5 +12,5 @@
     $result = mysqli_query($conn, $sql);
 
     // Redirect to homepage
-    header("Location: index.php");
+    // header("Location: index.php");
 ?>

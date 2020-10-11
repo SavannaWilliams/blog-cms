@@ -21,6 +21,7 @@ new List('sortable-blog-list', options);
 
 // Ace editor initialization script
 var editor = ace.edit("editor");
+editor.setTheme("ace/theme/eclipse");
 editor.session.setMode("ace/mode/html");
 
 
@@ -32,7 +33,7 @@ $("#submit").click(function() {
     var date = $("#date").val();
     var content = editor.getValue();
 
-    $.post( "submit-post.php", { 
+    $.post("submit-post.php", { 
         title: title, 
         content: content, 
         author: author, 
